@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.9.23 on darwin)" generated="2025-06-20T15:18:08.371837" rpa="false" schemaversion="5">
+<suite id="s1" name="UI tests" source="/Users/nanthanthansoe/Nan-QA/virtapp-qa/robot/UI_tests">
+<suite id="s1-s1" name="Login" source="/Users/nanthanthansoe/Nan-QA/virtapp-qa/robot/UI_tests/login.robot">
+<test id="s1-s1-t1" name="Valid Overview" line="9">
+<kw name="Given browser is opened to Overview page">
+<kw name="Open Browser To Overview Page" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-20T15:18:08.498035" level="INFO">Opening browser 'Firefox' to base url 'http://google.com/'.</msg>
+<arg>${Overview URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-20T15:18:08.497811" elapsed="4.216693"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-06-20T15:18:12.715330" elapsed="0.609518"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-06-20T15:18:13.325037" elapsed="0.000418"/>
+</kw>
+<kw name="Overview Page Should Be Open" owner="resource">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-06-20T15:18:13.328006" level="INFO">Page title is 'Google'.</msg>
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-06-20T15:18:13.325961" elapsed="0.002152"/>
+</kw>
+<status status="PASS" start="2025-06-20T15:18:13.325657" elapsed="0.002623"/>
+</kw>
+<status status="PASS" start="2025-06-20T15:18:08.497186" elapsed="4.831153"/>
+</kw>
+<status status="PASS" start="2025-06-20T15:18:08.496862" elapsed="4.831544"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-06-20T15:18:13.328805" elapsed="0.608785"/>
+</kw>
+<status status="PASS" start="2025-06-20T15:18:08.496273" elapsed="5.441580"/>
+</test>
+<doc>A test suite with a single Gherkin style test.
+
+This test is trying to access google page.</doc>
+<status status="PASS" start="2025-06-20T15:18:08.388366" elapsed="5.550125"/>
+</suite>
+<status status="PASS" start="2025-06-20T15:18:08.372940" elapsed="5.566108"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="UI tests" id="s1" pass="1" fail="0" skip="0">UI tests</stat>
+<stat name="Login" id="s1-s1" pass="1" fail="0" skip="0">UI tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
